@@ -21,4 +21,7 @@ app.get('/restaurants/:id/photos', (req, res) => {
   res.redirect(`http://127.0.0.1:3000/api/restaurants/${req.params.id}/photos`);
 });
 
+app.get('/restaurants/:id/googlereviews', (req, res) => {
+  res.redirect(`http://127.0.0.1:3003/api/restaurants/${req.params.id}/googlereviews`);
+});
 app.listen(PORT, () => console.log(`Proxy server listening on port ${PORT}!`));
